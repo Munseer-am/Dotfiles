@@ -463,6 +463,14 @@ def init_widgets_list():
                         fontsize = 12,
                         format="%Y-%m-%d %H:%M"
                         ),
+               widget.Battery(
+                        format='{percent:2.0%}',
+                        show_short_text=False,
+                        low_percentage=0.25,
+                        update_interval = 5,
+                        fontsize = 12,
+                        foreground = "#13c43a"
+               )
 
                widget.Systray(
                        background=colors[10],
